@@ -113,7 +113,7 @@ require (
 	gopkg.in/yaml.v2 v2.2.8
 	k8s.io/api v0.0.0
 	k8s.io/apiextensions-apiserver v0.0.0
-	k8s.io/apimachinery v0.0.0
+	k8s.io/apimachinery v0.18.8
 	k8s.io/apiserver v0.0.0
 	k8s.io/cli-runtime v0.0.0
 	k8s.io/client-go v0.0.0
@@ -141,6 +141,7 @@ require (
 	k8s.io/sample-apiserver v0.0.0
 	k8s.io/system-validators v1.3.0
 	k8s.io/utils v0.0.0-20201110183641-67b214c5f920
+	sigs.k8s.io/kind v0.9.0 // indirect
 	sigs.k8s.io/yaml v1.2.0
 )
 

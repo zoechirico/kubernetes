@@ -27,6 +27,7 @@ import (
 	"k8s.io/client-go/kubernetes/fake"
 	core "k8s.io/client-go/testing"
 	"k8s.io/kubernetes/pkg/controller"
+
 )
 
 func TestServiceAccountCreation(t *testing.T) {
@@ -197,6 +198,7 @@ func TestServiceAccountCreation(t *testing.T) {
 		}
 
 		if tc.AddedNamespace != nil {
+			
 			nsStore.Add(tc.AddedNamespace)
 			controller.namespaceAdded(tc.AddedNamespace)
 		}

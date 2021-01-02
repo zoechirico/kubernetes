@@ -112,6 +112,7 @@ func (s set) delete(item t) {
 
 // Add marks item as needing processing.
 func (q *Type) Add(item interface{}) {
+	
 	q.cond.L.Lock()
 	defer q.cond.L.Unlock()
 	if q.shuttingDown {

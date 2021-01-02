@@ -148,7 +148,9 @@ func (c *ServiceAccountsController) serviceAccountDeleted(obj interface{}) {
 
 // namespaceAdded reacts to a Namespace creation by creating a default ServiceAccount object
 func (c *ServiceAccountsController) namespaceAdded(obj interface{}) {
+	
 	namespace := obj.(*v1.Namespace)
+	klog.Error("Chirico: Adding namespace: %v",namespace)
 	c.queue.Add(namespace.Name)
 }
 
