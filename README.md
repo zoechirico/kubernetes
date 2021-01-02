@@ -2,9 +2,13 @@
 ln -sf /home/codespace/workspace/kubernetes /home/codespace/workspace/src/k8s.io/kubernetes
 export GOPATH=/home/codespace/workspace
 
+go get sigs.k8s.io/kind
+
 cd /home/codespace/workspace/src/k8s.io/kubernetes
 kind build node-image --image=master
 
+
+kind create cluster --image=master
 ```
 
 
