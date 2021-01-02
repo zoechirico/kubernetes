@@ -1,4 +1,21 @@
+```bash
+ln -sf /home/codespace/workspace/kubernetes /home/codespace/workspace/src/k8s.io/kubernetes
+
+
+```
+
+
+
 # Kubernetes (K8s)
+
+
+
+
+
+
+
+
+
 
 [![GoDoc Widget]][GoDoc] [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/569/badge)](https://bestpractices.coreinfrastructure.org/projects/569)
 
